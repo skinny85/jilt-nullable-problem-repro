@@ -6,8 +6,8 @@
     <artifactId>nullcheck-sample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <properties>
-        <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
     </properties>
     <dependencies>
         <dependency>
@@ -35,6 +35,12 @@
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
             <version>3.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

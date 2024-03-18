@@ -19,5 +19,4 @@ public final class Person {
 
     @jakarta.annotation.Nullable // works in jilt.Builder
     private final String jakartaNullableMiddleName;
-
 }
