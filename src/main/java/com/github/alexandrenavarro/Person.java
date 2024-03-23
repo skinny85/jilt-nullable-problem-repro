@@ -1,9 +1,12 @@
 package com.github.alexandrenavarro;
 
-import lombok.*;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.ToString;
 import org.jilt.Builder;
 import org.jilt.BuilderStyle;
-import org.jspecify.annotations.Nullable;
 
 @AllArgsConstructor(access = AccessLevel.PACKAGE)
 @Getter
@@ -14,7 +17,7 @@ public final class Person {
     private final String firstName;
     private final String lastname;
 
-    @Nullable // Bug does not work in jilt.Builder
+    @org.jspecify.annotations.Nullable // fixed in Jilt 1.5
     private final String jspecifyNullableMiddleName;
 
     @jakarta.annotation.Nullable // works in jilt.Builder
